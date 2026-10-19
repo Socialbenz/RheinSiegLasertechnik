@@ -1,0 +1,656 @@
+.clear {
+  background: white;
+  color: var(--rs-tiefblau);
+  font-size: 17px;
+  overflow: clip;
+}
+.clear h2 {
+  font-size: clamp(36px, 4vw, 58px);
+  font-weight: 500;
+  line-height: 1.12;
+  letter-spacing: -0.05em;
+}
+.c-hero {
+  position: relative;
+  height: 850px;
+  min-height: 650px;
+  max-height: 1050px;
+  isolation: isolate;
+  color: white;
+  background: #10202a;
+}
+.c-hero-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 60% 50%;
+  z-index: -3;
+  animation: c-zoom 18s ease-out forwards;
+}
+.c-hero-shade {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background:
+    linear-gradient(
+      90deg,
+      #000f22ed 1%,
+      #0a1b33ba 29%,
+      #0a1b3333 69%,
+      #0a1b330a
+    ),
+    linear-gradient(#000f2233, transparent 45%, #000f2240);
+}
+.c-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 3.6%;
+  gap: 25px;
+  z-index: 10;
+}
+.c-header .brand-logo {
+  width: 177px;
+}
+.c-header > nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 12px;
+}
+.c-header-cta {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 11px 15px;
+  border: 1px solid #eef3f887;
+  font-size: 12px;
+  border-radius: 1px;
+}
+.c-header-cta:hover {
+  background: white;
+  color: var(--rs-tiefblau);
+}
+.c-hero-inner {
+  position: relative;
+  max-width: 1350px;
+  margin: auto;
+  padding: 223px 6% 100px;
+}
+.c-overline {
+  font: 10px "IBM Plex Mono";
+  letter-spacing: 0.12em;
+  color: #cbd5e1;
+}
+.c-hero h1 {
+  font-size: clamp(46px, 5.1vw, 76px);
+  font-weight: 500;
+  letter-spacing: -0.06em;
+  line-height: 1.08;
+  margin: 22px 0;
+}
+.c-hero-inner > p {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 400px;
+  color: #d5dde8;
+}
+.c-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 25px;
+  padding: 13px 18px;
+  background: var(--rs-eisblau);
+  color: var(--rs-tiefblau);
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 1px;
+}
+.c-hero-inner > .c-button {
+  margin-top: 29px;
+}
+.c-button:hover {
+  background: var(--rs-licht);
+  transform: translateY(-2px);
+}
+.c-button.dark {
+  background: var(--rs-tiefblau);
+  color: white;
+}
+.c-button.dark:hover {
+  background: var(--rs-stahlblau);
+}
+.c-location {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 48px;
+  font-size: 12px;
+  color: #d5dde8;
+}
+.c-hero-caption {
+  position: absolute;
+  bottom: 23px;
+  right: 3.6%;
+  font-size: 8px;
+  color: #eef3f8ad;
+}
+.c-scroll {
+  position: absolute;
+  bottom: 26px;
+  left: 6%;
+  height: 45px;
+  width: 45px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1px solid #ffffff45;
+}
+.c-scroll:hover {
+  background: #ffffff21;
+  transform: translateY(4px);
+}
+.c-intro {
+  max-width: 1290px;
+  padding: 112px 5%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  gap: 100px;
+}
+.c-intro h2 {
+  margin-top: 24px;
+}
+.clear .eyebrow {
+  font-size: 10px;
+  color: var(--rs-stahlblau);
+}
+.c-intro > div:last-child {
+  padding-top: 44px;
+}
+.c-intro p {
+  color: var(--rs-stahlgrau);
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+.c-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 24px;
+  font-size: 14px;
+  border-bottom: 1px solid var(--rs-aluminium);
+  padding-bottom: 8px;
+  margin-top: 10px;
+}
+.c-text-link:hover {
+  gap: 30px;
+  color: var(--rs-stahlblau);
+}
+.c-services {
+  padding: 95px 6%;
+  background: #f6f9fc;
+}
+.c-services-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  max-width: 1180px;
+  margin: 0 auto 60px;
+  gap: 60px;
+}
+.c-services-heading h2 {
+  margin-top: 20px;
+}
+.c-services-heading > p {
+  max-width: 300px;
+  color: var(--rs-stahlgrau);
+  font-size: 16px;
+}
+.c-service-list {
+  max-width: 1180px;
+  margin: auto;
+  border-top: 1px solid var(--rs-aluminium);
+}
+.c-service-row {
+  display: grid;
+  grid-template-columns: 50px 1fr 1fr 50px;
+  align-items: center;
+  gap: 30px;
+  padding: 32px 0;
+  border-bottom: 1px solid var(--rs-aluminium);
+}
+.c-service-row > span {
+  font: 11px "IBM Plex Mono";
+  color: var(--rs-stahlgrau);
+}
+.c-service-row h3 {
+  font-size: 22px;
+  font-weight: 500;
+}
+.c-service-row > p {
+  font-size: 15px;
+  color: var(--rs-stahlgrau);
+  line-height: 1.65;
+}
+.c-service-row > a {
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--rs-aluminium);
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+}
+.c-service-row > a:hover {
+  background: var(--rs-tiefblau);
+  color: white;
+  transform: rotate(45deg);
+}
+.c-method {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 720px;
+}
+.c-method-photo {
+  position: relative;
+  overflow: hidden;
+}
+.c-method-photo > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 35%;
+}
+.c-method-photo > span {
+  position: absolute;
+  bottom: 18px;
+  left: 25px;
+  font-size: 9px;
+  color: white;
+}
+.c-method-copy {
+  padding: 85px 10%;
+}
+.c-method-copy h2 {
+  margin-top: 24px;
+}
+.c-method-copy > p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--rs-stahlgrau);
+  margin: 25px 0;
+}
+.c-benefits {
+  display: grid;
+  gap: 18px;
+  margin: 35px 0;
+}
+.c-benefits > div {
+  display: grid;
+  grid-template-columns: 27px 1fr;
+  column-gap: 14px;
+}
+.c-benefits svg {
+  grid-row: span 2;
+  margin-top: 1px;
+  color: var(--rs-stahlblau);
+}
+.c-benefits h3 {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+.c-benefits p {
+  font-size: 14px;
+  color: var(--rs-stahlgrau);
+  margin-top: 6px;
+}
+.c-process {
+  padding: 105px 6%;
+  background: var(--rs-tiefblau);
+  color: white;
+}
+.c-process > div:first-child {
+  text-align: center;
+}
+.c-process .eyebrow {
+  color: var(--rs-himmelblau);
+}
+.c-process h2 {
+  margin-top: 24px;
+}
+.c-process > div:last-child {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 65px auto 0;
+}
+.c-process > div:last-child > div {
+  border-top: 1px solid #c0e6fd45;
+  padding-top: 25px;
+}
+.c-process > div:last-child span {
+  font: 12px "IBM Plex Mono";
+  color: var(--rs-himmelblau);
+}
+.c-process h3 {
+  font-size: 17px;
+  font-weight: 500;
+  margin: 24px 0 13px;
+}
+.c-process p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #a9b8cc;
+}
+.c-about {
+  max-width: 1300px;
+  padding: 110px 6%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 90px;
+  align-items: center;
+}
+.c-about h2 {
+  margin: 20px 0 25px;
+}
+.c-about > div > p {
+  color: var(--rs-stahlgrau);
+  font-size: 17px;
+  line-height: 1.7;
+}
+.c-about .team-members > div {
+  background: #f6f9fc;
+  padding: 24px;
+  border-top: 0;
+}
+.c-about .person-initials {
+  width: 75px;
+  height: 75px;
+  border-radius: 2px;
+  background: #eef3f8;
+  border: 0;
+}
+.c-about .team-members h3 {
+  font-size: 16px;
+}
+.c-faq {
+  max-width: 920px;
+  margin: auto;
+  padding: 50px 30px 100px;
+  text-align: center;
+}
+.c-faq h2 {
+  margin: 22px 0 40px;
+}
+.c-faq .faqs {
+  text-align: left;
+}
+.c-contact {
+  padding: 100px 6%;
+  background: var(--rs-eisblau);
+}
+.clear .contact-card {
+  border-radius: 0;
+  padding: 35px;
+  box-shadow: 0 8px 45px #000f2208;
+}
+.clear .contact-intro h2 {
+  font-weight: 500;
+}
+.clear .contact-card input:not([type="checkbox"]):not([type="file"]),
+.clear .contact-card textarea,
+.clear .soil-chips button,
+.clear .submit-btn {
+  border-radius: 1px;
+}
+.clear .contact-card .upload-label {
+  border-radius: 0;
+}
+.clear .site-footer {
+  background: white;
+}
+.clear .whatsapp-placeholder {
+  border-radius: 1px;
+}
+@keyframes c-zoom {
+  from {
+    transform: scale(1.05);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@media (min-width: 1600px) {
+  .c-hero {
+    height: 920px;
+  }
+  .c-hero-inner {
+    padding-top: 240px;
+  }
+}
+@media (max-width: 1050px) {
+  .c-header > nav {
+    gap: 15px;
+    font-size: 11px;
+  }
+  .c-header .brand-logo {
+    width: 160px;
+  }
+  .c-hero-inner {
+    padding-top: 210px;
+  }
+  .c-intro {
+    gap: 50px;
+  }
+  .c-method-copy {
+    padding: 60px 10%;
+  }
+  .c-method-copy h2 {
+    font-size: 40px;
+  }
+  .c-about {
+    gap: 45px;
+  }
+  .c-service-row {
+    gap: 22px;
+  }
+  .c-service-row h3 {
+    font-size: 19px;
+  }
+}
+@media (max-width: 760px) {
+  .c-hero {
+    height: 800px;
+    min-height: 0;
+    max-height: none;
+  }
+  .c-header {
+    padding: 20px 6%;
+  }
+  .c-header > nav,
+  .c-header-cta {
+    display: none;
+  }
+  .c-header .brand-logo {
+    width: 170px;
+  }
+  .c-hero-photo {
+    object-position: 64% 50%;
+  }
+  .c-hero-shade {
+    background: linear-gradient(90deg, #000f22e8, #0a1b339e 70%, #0a1b3350);
+  }
+  .c-hero-inner {
+    padding: 190px 7% 90px;
+  }
+  .c-hero h1 {
+    font-size: clamp(43px, 9vw, 62px);
+    line-height: 1.1;
+  }
+  .c-hero-inner > p {
+    font-size: 17px;
+    max-width: 320px;
+  }
+  .c-location {
+    font-size: 11px;
+    margin-top: 35px;
+  }
+  .c-hero-caption {
+    bottom: 16px;
+    right: 6%;
+    font-size: 7px;
+    max-width: 200px;
+    text-align: right;
+  }
+  .c-scroll {
+    left: 7%;
+    bottom: 20px;
+    width: 38px;
+    height: 38px;
+  }
+  .c-intro {
+    padding: 70px 7%;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .c-intro > div:last-child {
+    padding-top: 0;
+  }
+  .clear h2 {
+    font-size: 36px;
+  }
+  .c-intro p {
+    font-size: 17px;
+  }
+  .c-services {
+    padding: 65px 7%;
+  }
+  .c-services-heading {
+    display: block;
+    margin-bottom: 40px;
+  }
+  .c-services-heading > p {
+    margin-top: 22px;
+    max-width: none;
+  }
+  .c-service-row {
+    grid-template-columns: 25px 1fr 35px;
+    gap: 15px;
+    padding: 25px 0;
+  }
+  .c-service-row > p {
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 14px;
+  }
+  .c-service-row > a {
+    grid-column: 3;
+    grid-row: 1/3;
+    width: 34px;
+    height: 34px;
+  }
+  .c-service-row > a svg {
+    width: 20px;
+  }
+  .c-service-row h3 {
+    font-size: 20px;
+  }
+  .c-method {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+  .c-method-photo {
+    height: 370px;
+  }
+  .c-method-copy {
+    padding: 60px 7%;
+  }
+  .c-method-copy > p {
+    font-size: 16px;
+  }
+  .c-process {
+    padding: 65px 7%;
+  }
+  .c-process > div:last-child {
+    grid-template-columns: 1fr 1fr;
+    gap: 35px 25px;
+    margin-top: 40px;
+  }
+  .c-process h3 {
+    font-size: 15px;
+  }
+  .c-process p {
+    font-size: 14px;
+  }
+  .c-about {
+    padding: 70px 7%;
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+  .c-about .team-members > div {
+    padding: 20px 15px;
+  }
+  .c-about .team-members h3 {
+    font-size: 14px;
+  }
+  .c-about .team-members p {
+    font-size: 12px;
+  }
+  .c-faq {
+    padding: 35px 7% 65px;
+  }
+  .c-contact {
+    padding: 65px 7%;
+  }
+  .clear .contact-card {
+    padding: 25px;
+  }
+  .c-faq h2 {
+    margin-bottom: 28px;
+  }
+}
+/* Cleanfy's narrower, inset editorial composition. */
+@media (min-width: 1100px) {
+  .c-hero-inner {
+    max-width: 1000px;
+    padding: 235px 0 95px;
+  }
+  .c-hero h1 {
+    font-size: 61px;
+    line-height: 1.1;
+  }
+  .c-hero-inner > p {
+    max-width: 385px;
+    font-size: 17px;
+  }
+  .c-hero-inner > .c-button {
+    margin-top: 28px;
+  }
+  .c-scroll {
+    left: max(6%, calc((100% - 1000px) / 2));
+  }
+  .c-hero-inner .c-location {
+    margin-top: 38px;
+  }
+}
+.clear .reveal {
+  transform: translateY(22px);
+  clip-path: inset(0 0 12% 0);
+  transition:
+    opacity 0.9s ease,
+    transform 0.9s ease,
+    clip-path 1.1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.clear .reveal.visible {
+  transform: none;
+  clip-path: inset(0);
+}

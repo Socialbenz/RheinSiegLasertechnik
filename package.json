@@ -1,0 +1,26 @@
+{
+  "name": "rhein-sieg-design-concepts",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node --test tests/original-source.test.mjs && playwright test",
+    "test:ui": "playwright test --ui",
+    "screenshots": "node scripts/screenshots.mjs",
+    "prepare:preview": "npm run build && node scripts/prepare-preview.mjs",
+    "predev": "node scripts/build-original.mjs",
+    "prebuild": "node scripts/build-original.mjs"
+  },
+  "dependencies": {
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "lucide-react": "0.468.0"
+  },
+  "devDependencies": {
+    "vite": "6.4.1",
+    "@playwright/test": "1.58.2"
+  }
+}

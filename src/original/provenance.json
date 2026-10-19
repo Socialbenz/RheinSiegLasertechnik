@@ -1,0 +1,43 @@
+{
+  "url": "https://rhein-sieg-lasertechnik.vercel.app/",
+  "retrieved": "2026-10-19",
+  "source_sha256": "d4ce3a58ab9508fc75b69e231384ba39b8d606e43f824895c2ff6da042497aee",
+  "assets": {
+    "/original/assets/7a6ccad67c29964c.svg": {
+      "mime": "image/svg+xml",
+      "sha256": "7a6ccad67c29964c7db23b9b3081d6139e07dc6be28a2b36cfc6f3cf9cd118b8"
+    },
+    "/original/assets/501d4d89c9a94c68.png": {
+      "mime": "image/png",
+      "sha256": "501d4d89c9a94c687b69dd055fd8bc209f593c62702f8865b9545e8687fcdc51"
+    },
+    "/original/assets/b9fbaa14ad954b5d.png": {
+      "mime": "image/png",
+      "sha256": "b9fbaa14ad954b5d4c6c607fd23d44b3ad19ca6f14b721581d3b774e1fbb0699"
+    },
+    "/original/assets/3708f2252dff354b.svg": {
+      "mime": "image/svg+xml",
+      "sha256": "3708f2252dff354b47a6dd61236347654a5180e7d26cd59593b3cdb110e2e46f"
+    },
+    "/original/assets/c4a49c95f4f19a4b.webp": {
+      "mime": "image/webp",
+      "sha256": "c4a49c95f4f19a4b531c20c810533d6991582f6286fe9a46d6256be5d146d305"
+    },
+    "/original/assets/1753ad1bea521e82.webp": {
+      "mime": "image/webp",
+      "sha256": "1753ad1bea521e82995854121e834599dbef2fe2438961a376044d833e248938"
+    },
+    "/original/assets/4df70714966d8d40.webp": {
+      "mime": "image/webp",
+      "sha256": "4df70714966d8d408f160df024c846abde352f34e0450ae7fac56626647df3ad"
+    },
+    "/original/assets/ca8074fdaaeb03c1.webp": {
+      "mime": "image/webp",
+      "sha256": "ca8074fdaaeb03c1c59f65d62d4418b46983c260d01f6922e2143b8d8264a948"
+    },
+    "/original/assets/c8c915cc21bad81f.svg": {
+      "mime": "image/svg+xml",
+      "sha256": "c8c915cc21bad81f88f8ca079768b8dc5974744930922d494ff8311f6c8445ab"
+    }
+  }
+}
