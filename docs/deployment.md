@@ -1,9 +1,11 @@
 # Veröffentlichung
 
-Die Website ist für das GitHub-Repository `Socialbenz/RheinSiegLasertechnik` vorbereitet. Als Vercel-Projekt ist `rsl-website-entwuerfe` im persönlichen Konto vorgesehen.
+Der Website-Code liegt auf `main` im Repository https://github.com/Socialbenz/RheinSiegLasertechnik. Der geprüfte Website-Stand wurde mit Commit `1586072` übertragen. Vier Quellprüfungen und 21 Browsertests haben bestanden.
 
-Der Produktionsbuild erzeugt `dist/`. Die Routingregeln in `vercel.json` sind für alle fünf Seiten erforderlich. Insbesondere muss `/design-05` auf `/original/index.html` zeigen.
+Die aktualisierte temporäre Vorschau ist unter https://temporary-quick-banjo-b0koypb.vercel.app erreichbar. Vercel meldet `READY`. Ohne Übernahme läuft sie am 19.10.2026, 17:07 Uhr Berliner Zeit ab. Der private Übernahmelink liegt außerhalb des Repositories.
 
-Nach einer erfolgreichen Veröffentlichung werden hier der dauerhafte Projektlink und der geprüfte Stand eingetragen. Die bisherige temporäre Vorschau läuft unabhängig davon aus.
+Die Vercel-CLI hat die Kontofreigabe bisher nicht übernommen. In GitHub ist für das Repository noch kein Vercel-Deployment eingetragen. Ein dauerhaftes Projekt im persönlichen Konto ist daher noch nicht bestätigt.
 
-Für die Verbindung mit GitHub wird kein Passwort im Chat benötigt. Die Anmeldung erfolgt auf der Vercel-Website.
+Die vorhandene Verbindung zwischen GitHub und Vercel kann für den Import verwendet werden: Auf https://vercel.com/new das Repository `Socialbenz/RheinSiegLasertechnik` auswählen, den Projektnamen `rsl-website-entwuerfe` eintragen und veröffentlichen. Framework: Vite. Buildbefehl: `npm run build`. Ausgabeverzeichnis: `dist`. Es sind keine zusätzlichen Umgebungsvariablen nötig.
+
+Die bestehende Testseite unter `rhein-sieg-lasertechnik.vercel.app` behält ihr eigenes Projekt.
